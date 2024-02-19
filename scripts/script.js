@@ -4,6 +4,7 @@ const sits = document.getElementsByClassName('item');
 let price = 0;
 let sitClickCount = 0;
 
+
 for (const sit of sits) {
   sit.addEventListener('click', function sitClick(event) {
     if (sitClickCount  < 4) {
@@ -49,9 +50,10 @@ for (const sit of sits) {
 
 
 
+     let nextBtn = document.getElementById('next-btn');
+     document.getElementById('phone-number').addEventListener;
+     nextBtn.removeAttribute('disabled');
 
-  let nextBtn = document.getElementById('next-btn');
-  nextBtn.removeAttribute('disabled')
 
 const econmy = document.getElementById('economy-container');
 econmy.appendChild(list)
@@ -132,7 +134,7 @@ discountArea.classList.add('flex')
      
 
 
-      alert('Sorry. You can buy a maximum of 4 tickets')
+      alert('Sorry. You cannot buy more than 4 tickets')
     }
   });
 
@@ -168,10 +170,14 @@ document.getElementById('cupon').value = '';
 })
 
 
-document.getElementById('continue').addEventListener('click' , function(){
 
 
 
 
-}
-)
+
+document.getElementById('continue').addEventListener('click', function () {
+
+
+location.reload()
+
+});
