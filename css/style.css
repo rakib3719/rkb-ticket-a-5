@@ -48,10 +48,7 @@
     color: #030712;
 }
 
-.item-b{
 
-
-}
 
 .short{
 
@@ -64,3 +61,9 @@ font-weight: 300;
 
 
 
+.hero-overlay{
+
+
+border-radius: 28px;
+
+}

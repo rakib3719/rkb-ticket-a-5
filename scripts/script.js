@@ -55,7 +55,7 @@ document.getElementById('apply-cupon').addEventListener('click', function(){
 
     const cuponValue = document.getElementById('cupon').value;
 
-    
+  
 
     if(cuponValue === 'NEW15'){
 
@@ -67,41 +67,51 @@ document.getElementById('apply-cupon').addEventListener('click', function(){
 
 
 
-        let discountCupon1 = ( price  * 15 )  / 100;
+      let discountCupon1 = ( price  * 15 )  / 100;
 
-
-let discountTotal  = price - discountCupon1; 
-        granTotal.innerText = discountTotal;
-
-
-const applySectonHide = document.getElementById('coupon-add-section');
-
-applySectonHide.style.display = 'none'
-
-
-    }
-    if(cuponValue === 'Couple 20'){
-  
    
-   
-        let discountCupon1 = ( price  * 20 )  / 100;
-
-     
+      let discountArea = document.getElementById('discount-part');
+      
        
+   
+   
+   let discountTotal  = price - discountCupon1; 
+         granTotal.innerText = discountTotal;
+   
+   
+   const applySectonHide = document.getElementById('coupon-add-section');
+   let discountAmount = document.getElementById('discount');
+   discountAmount.innerText = discountCupon1;
+   applySectonHide.style.display = 'none'
+   discountArea.classList.remove('hidden')
+   discountArea.classList.add('flex')
+  }
+  if(cuponValue === 'Couple 20'){
+
+ 
+ 
+      let discountCupon1 = ( price  * 20 )  / 100;
+
+   
+   let discountArea = document.getElementById('discount-part');
+   
+    
 
 
 let discountTotal  = price - discountCupon1; 
-        granTotal.innerText = discountTotal;
+      granTotal.innerText = discountTotal;
 
 
 const applySectonHide = document.getElementById('coupon-add-section');
-
+let discountAmount = document.getElementById('discount');
+discountAmount.innerText = discountCupon1;
 applySectonHide.style.display = 'none'
+discountArea.classList.remove('hidden')
+discountArea.classList.add('flex')
+  }
 
 
-    }
 
-  
 
 
 
@@ -131,4 +141,18 @@ applySectonHide.style.display = 'none'
 
 
 
-   
+
+document.getElementById('apply-cupon').addEventListener('click',function(){
+
+
+ const cupon = document.getElementById('cupon').value;
+
+ if(cupon !== "NEW15" && cupon !== "Couple 20" ){
+
+  alert("Sorry! Please input a valid cupon")
+ }
+
+
+
+
+})
