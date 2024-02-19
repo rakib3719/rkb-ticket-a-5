@@ -1,26 +1,21 @@
 
-/* .banner{
- background-image: url('/images/banner.png');
- background-size: 100% 100%;
- background-repeat: no-repeat;
- width: 1171px;
- height: 550px;
-} */
-.grid-container{
 
-}
+
 
 .item{
     background-color: #F7F8F8;
     border-radius: 12px;
     
-    /* width: 100px; */
+  
     padding: 10px 5px;
 }
 .item-fixed{
     background-color: transparent;
 }
+.item-b{
 
+    padding: 10px 5px; 
+}
 
 
 .common-color{
@@ -29,3 +24,43 @@
     background-color: #1dd100;
     color: white;
 }
+
+.inter{
+
+
+
+
+
+  font-family: "Inter", sans-serif;
+ 
+
+  
+}
+.raleway{
+
+
+    font-family: "Raleway", sans-serif;
+}
+
+
+.append p{
+
+    color: #030712;
+}
+
+.item-b{
+
+
+}
+
+.short{
+
+    color: #4A4A4A;
+    
+
+font-weight: 300;
+
+}
+
+
+
