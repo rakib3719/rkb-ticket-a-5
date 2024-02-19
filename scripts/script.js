@@ -7,11 +7,11 @@ let sitClickCount = 0;
 
 for (const sit of sits) {
   sit.addEventListener('click', function sitClick(event) {
-    if (sitClickCount  < 4) {
+    if (sitClickCount < 4) {
       const sitName = event.target.innerText;
- ;
+      ;
       sit.classList.add('common-color');
-      sitClickCount  = sitClickCount + 1;
+      sitClickCount = sitClickCount + 1;
       event.target.removeEventListener('click', sitClick);
       price = price + 550;
 
@@ -23,19 +23,19 @@ for (const sit of sits) {
 
 
       let sitCount = document.getElementById('sitCount');
-      sitCount.innerText =   sitClickCount;
+      sitCount.innerText = sitClickCount;
 
-     let avaivaleSit = document.getElementById('avl-sit');
-
-     
-
-  
-     avaivaleSit.innerText = parseInt(avaivaleSit.innerText) - 1;
+      let avaivaleSit = document.getElementById('avl-sit');
 
 
 
-     let list = document.createElement('div');
-     list.innerHTML = `
+
+      avaivaleSit.innerText = parseInt(avaivaleSit.innerText) - 1;
+
+
+
+      let list = document.createElement('div');
+      list.innerHTML = `
      
      <div class="flex justify-between">
      <p>${sitName}</p>
@@ -50,88 +50,88 @@ for (const sit of sits) {
 
 
 
-     let nextBtn = document.getElementById('next-btn');
-     document.getElementById('phone-number').addEventListener;
-     nextBtn.removeAttribute('disabled');
+      let nextBtn = document.getElementById('next-btn');
+      document.getElementById('phone-number').addEventListener;
+      nextBtn.removeAttribute('disabled');
 
 
-const econmy = document.getElementById('economy-container');
-econmy.appendChild(list)
+      const econmy = document.getElementById('economy-container');
+      econmy.appendChild(list)
 
-document.getElementById('apply-cupon').addEventListener('click', function(){
+      document.getElementById('apply-cupon').addEventListener('click', function () {
 
-    const cuponValue = document.getElementById('cupon').value;
-
-  
-
-    if(cuponValue === 'NEW15'){
-
- 
-
-
-  
+        const cuponValue = document.getElementById('cupon').value;
 
 
 
-
-      let discountCupon1 = ( price  * 15 )  / 100;
-
-   
-      let discountArea = document.getElementById('discount-part');
-      
-       
-   
-   
-   let discountTotal  = price - discountCupon1; 
-         granTotal.innerText = discountTotal;
-   
-   
-   const applySectonHide = document.getElementById('coupon-add-section');
-   let discountAmount = document.getElementById('discount');
-   discountAmount.innerText = discountCupon1;
-   applySectonHide.style.display = 'none'
-   discountArea.classList.remove('hidden')
-   discountArea.classList.add('flex')
-  }
-  if(cuponValue === 'Couple 20'){
-
- 
- 
-      let discountCupon1 = ( price  * 20 )  / 100;
-
-   
-   let discountArea = document.getElementById('discount-part');
-   
-    
-
-
-let discountTotal  = price - discountCupon1; 
-      granTotal.innerText = discountTotal;
-
-
-const applySectonHide = document.getElementById('coupon-add-section');
-let discountAmount = document.getElementById('discount');
-discountAmount.innerText = discountCupon1;
-applySectonHide.style.display = 'none'
-discountArea.classList.remove('hidden')
-discountArea.classList.add('flex')
-  }
+        if (cuponValue === 'NEW15') {
 
 
 
 
 
 
-})
+
+
+
+          let discountCupon1 = (price * 15) / 100;
+
+
+          let discountArea = document.getElementById('discount-part');
+
+
+
+
+          let discountTotal = price - discountCupon1;
+          granTotal.innerText = discountTotal;
+
+
+          const applySectonHide = document.getElementById('coupon-add-section');
+          let discountAmount = document.getElementById('discount');
+          discountAmount.innerText = discountCupon1;
+          applySectonHide.style.display = 'none'
+          discountArea.classList.remove('hidden')
+          discountArea.classList.add('flex')
+        }
+        if (cuponValue === 'Couple 20') {
+
+
+
+          let discountCupon1 = (price * 20) / 100;
+
+
+          let discountArea = document.getElementById('discount-part');
+
+
+
+
+          let discountTotal = price - discountCupon1;
+          granTotal.innerText = discountTotal;
+
+
+          const applySectonHide = document.getElementById('coupon-add-section');
+          let discountAmount = document.getElementById('discount');
+          discountAmount.innerText = discountCupon1;
+          applySectonHide.style.display = 'none'
+          discountArea.classList.remove('hidden')
+          discountArea.classList.add('flex')
+        }
+
+
+
+
+
+
+      })
 
 
 
 
     }
 
-    else{
+    else {
 
-     
+
 
 
       alert('Sorry. You cannot buy more than 4 tickets')
@@ -140,7 +140,7 @@ discountArea.classList.add('flex')
 
 
 
-  
+
 }
 
 
@@ -149,20 +149,20 @@ discountArea.classList.add('flex')
 
 
 
-document.getElementById('apply-cupon').addEventListener('click',function(){
+document.getElementById('apply-cupon').addEventListener('click', function () {
 
 
- const cupon = document.getElementById('cupon').value;
+  const cupon = document.getElementById('cupon').value;
 
- if(cupon !== "NEW15" && cupon !== "Couple 20" ){
+  if (cupon !== "NEW15" && cupon !== "Couple 20") {
 
-  alert("Sorry! Please input a valid cupon code");
-
-
-document.getElementById('cupon').value = '';
+    alert("Sorry! Please input a valid cupon code");
 
 
- }
+    document.getElementById('cupon').value = '';
+
+
+  }
 
 
 
@@ -178,6 +178,6 @@ document.getElementById('cupon').value = '';
 document.getElementById('continue').addEventListener('click', function () {
 
 
-location.reload()
+  location.reload()
 
 });
