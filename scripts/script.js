@@ -48,6 +48,17 @@ for (const sit of sits) {
 
 
 
+       let CustomerphoneNumber = document.getElementById('phone-number').value     
+
+
+
+
+
+
+
+  let nextBtn = document.getElementById('next-btn');
+  nextBtn.removeAttribute('disabled')
+
 const econmy = document.getElementById('economy-container');
 econmy.appendChild(list)
 
