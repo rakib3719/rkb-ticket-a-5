@@ -1,79 +1,70 @@
-
-
-
-
-.item{
+.item {
     background-color: #F7F8F8;
     border-radius: 12px;
-    
-  
+
+
     padding: 10px 0;
 }
-.item-fixed{
+
+.item-fixed {
     background-color: transparent;
 }
-.item-b{
 
-    padding: 10px 0; 
+.item-b {
+
+    padding: 10px 0;
     margin-right: -30px;
     margin-left: -20px;
 }
 
 
-.common-color{
+.common-color {
 
 
     background-color: #1dd100;
     color: white;
 }
 
-.inter{
+.inter {
 
 
 
 
 
-  font-family: "Inter", sans-serif;
- 
+    font-family: "Inter", sans-serif;
 
-  
+
+
 }
-.raleway{
+
+.raleway {
 
 
     font-family: "Raleway", sans-serif;
 }
 
 
-.append p{
+.append p {
 
     color: #030712;
 }
 
 
 
-.short{
+.short {
 
     color: #4A4A4A;
-    
-
-font-weight: 300;
-
-}
 
 
-
-.hero-overlay{
-
-
-border-radius: 28px;
+    font-weight: 300;
 
 }
-/* 
-.common-seat{
 
 
-   margin-right: 50px;
-   padding-left: 50px;
-    box-sizing: border-box;
-} */
+
+.hero-overlay {
+
+
+    border-radius: 28px;
+
+}
