@@ -48,12 +48,6 @@ for (const sit of sits) {
 
 
 
-       let CustomerphoneNumber = document.getElementById('phone-number').value     
-
-
-
-
-
 
 
   let nextBtn = document.getElementById('next-btn');
@@ -160,10 +154,24 @@ document.getElementById('apply-cupon').addEventListener('click',function(){
 
  if(cupon !== "NEW15" && cupon !== "Couple 20" ){
 
-  alert("Sorry! Please input a valid cupon")
+  alert("Sorry! Please input a valid cupon code");
+
+
+document.getElementById('cupon').value = '';
+
+
  }
 
 
 
 
 })
+
+
+document.getElementById('continue').addEventListener('click' , function(){
+
+
+
+
+}
+)

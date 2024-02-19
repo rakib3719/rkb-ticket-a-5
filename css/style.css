@@ -7,14 +7,16 @@
     border-radius: 12px;
     
   
-    padding: 10px 5px;
+    padding: 10px 0;
 }
 .item-fixed{
     background-color: transparent;
 }
 .item-b{
 
-    padding: 10px 5px; 
+    padding: 10px 0; 
+    margin-right: -30px;
+    margin-left: -20px;
 }
 
 
@@ -67,3 +69,11 @@ font-weight: 300;
 border-radius: 28px;
 
 }
+/* 
+.common-seat{
+
+
+   margin-right: 50px;
+   padding-left: 50px;
+    box-sizing: border-box;
+} */
